@@ -1,0 +1,6 @@
+framework module Pods_Pictures_LocatorUITests {
+  umbrella header "Pods-Pictures LocatorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

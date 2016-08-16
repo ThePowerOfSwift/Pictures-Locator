@@ -1,0 +1,6 @@
+framework module Pods_Pictures_Locator {
+  umbrella header "Pods-Pictures Locator-umbrella.h"
+
+  export *
+  module * { export * }
+}
