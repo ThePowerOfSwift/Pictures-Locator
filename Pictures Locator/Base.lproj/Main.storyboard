@@ -28,12 +28,12 @@
                                             </imageView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="7Wy-kL-f7m" secondAttribute="bottom" id="3rs-LP-Usu"/>
-                                            <constraint firstAttribute="trailing" secondItem="7Wy-kL-f7m" secondAttribute="trailing" id="F6F-g5-U5b"/>
-                                            <constraint firstItem="7Wy-kL-f7m" firstAttribute="leading" secondItem="hS6-0J-r5g" secondAttribute="leading" id="Xsz-di-rfY"/>
-                                            <constraint firstItem="7Wy-kL-f7m" firstAttribute="centerX" secondItem="hS6-0J-r5g" secondAttribute="centerX" id="cFK-17-gtk"/>
-                                            <constraint firstItem="7Wy-kL-f7m" firstAttribute="top" secondItem="hS6-0J-r5g" secondAttribute="top" id="iQ6-2W-Yne"/>
-                                            <constraint firstItem="7Wy-kL-f7m" firstAttribute="centerY" secondItem="hS6-0J-r5g" secondAttribute="centerY" id="ker-DY-MgB"/>
+                                            <constraint firstAttribute="trailing" secondItem="7Wy-kL-f7m" secondAttribute="trailing" id="UoA-SX-0eb"/>
+                                            <constraint firstItem="7Wy-kL-f7m" firstAttribute="top" secondItem="hS6-0J-r5g" secondAttribute="top" id="a4v-fG-VEx"/>
+                                            <constraint firstItem="7Wy-kL-f7m" firstAttribute="centerX" secondItem="hS6-0J-r5g" secondAttribute="centerX" id="gcP-Bx-7Tg"/>
+                                            <constraint firstAttribute="bottom" secondItem="7Wy-kL-f7m" secondAttribute="bottom" id="hkR-zf-eCj"/>
+                                            <constraint firstItem="7Wy-kL-f7m" firstAttribute="leading" secondItem="hS6-0J-r5g" secondAttribute="leading" id="nJI-Jn-xdM"/>
+                                            <constraint firstItem="7Wy-kL-f7m" firstAttribute="centerY" secondItem="hS6-0J-r5g" secondAttribute="centerY" id="raZ-IN-Jl5"/>
                                         </constraints>
                                     </scrollView>
                                 </subviews>
@@ -110,7 +110,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -142,6 +142,9 @@
                                     <segment title="Register"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="loginAndRegisterSegmentControl:" destination="5lS-Fe-0z8" eventType="valueChanged" id="lxx-cc-UXp"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQO-Ab-gfv">
                                 <color key="backgroundColor" red="0.25098039220000001" green="0.30196078430000001" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
@@ -157,6 +160,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerButtonPressed:" destination="5lS-Fe-0z8" eventType="touchUpInside" id="nHS-sI-cEM"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="l0G-9P-8wU"/>
                         </subviews>
@@ -178,6 +184,11 @@
                             <constraint firstItem="hdT-jT-i67" firstAttribute="centerX" secondItem="98c-XN-SJz" secondAttribute="centerX" id="yd1-5F-0BX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="CEK-XL-UUu" id="p4l-sV-G4Y"/>
+                        <outlet property="nameTextField" destination="Qvr-h0-W6W" id="Cmm-Zl-LjN"/>
+                        <outlet property="passwordTextField" destination="0Qg-Xz-xj0" id="Znx-Bl-gyQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HiI-x1-Vzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

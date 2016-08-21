@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
     
@@ -16,6 +17,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        //let ref = FIRDatabase.database().reference(fromURL: APIURL.BaseURL)
+        //ref.updateChildValues(["someValue": 123123])
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,4 +38,6 @@ class HomeViewController: UIViewController {
     
     @IBAction func syncButtonPressed(_ sender: UIBarButtonItem) {
     }
+    
+    
 }
